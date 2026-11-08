@@ -17,29 +17,16 @@ Using survey and biomarker data from SHARE, the project predicts four diseases j
 
 The thesis argues that stress testing under distribution shift should be a required step before a clinical model is considered for real use, in addition to accuracy on a held-out test set.
 
+### Level 1: noise injection
+
+Uncertainty as a function of the noise level, for each disease and model.
 ### Level 2: extreme OOD probe
 
 Mean uncertainty at baseline (sigma = 0) and under the OOD probe, by disease and generator. For stroke and cancer, the BNN uncertainty collapses.
 
-![Level 2 OOD probe](reports/figures/stress_level2_ood_probe.png)
-
-### Level 1: noise injection
-
-Uncertainty as a function of the noise level, for each disease and model.
-
-![Level 1 noise injection](reports/figures/stress_level1_noise.png)
-
 ### Level 3: feature permutation
 
 Change in uncertainty when a single feature is permuted, sorted by mean effect. Filled markers are significant effects.
-
-![Level 3 feature permutation](reports/figures/stress_level3_permutation.png)
-
-### Calibration on the real test set
-
-Reliability diagrams for the BNN (left) and MLP Dropout (right).
-
-![Reliability diagrams](reports/figures/calibration_reliability_diagrams.png)
 
 ## Data
 
