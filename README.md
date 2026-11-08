@@ -1,12 +1,8 @@
-# Uncertainty_Evaluation_Deep_Learning
-
 # Clinical Deep Learning Under Uncertainty
 
 Evaluating predictive reliability in multi-label risk estimation using generative synthetic patients.
 
-![Pipeline overview](reports/figures/pipeline_overview.png)
-
-This repository contains the code of a master's thesis in Business Analytics (University of Bologna, academic year 2025-2026). It asks a simple question. Can a clinical deep learning model be trusted when it meets data unlike anything seen in training?
+This repository contains the code of my master's dissertation in Business Analytics (University of Bologna, academic year 2025-2026). It asks a simple question. Can a clinical deep learning model be trusted when it meets data unlike anything seen in training?
 
 Using survey and biomarker data from SHARE, the project predicts four diseases jointly: diabetes, stroke, heart attack and cancer. Five multi-label models are compared. Two of them report their own uncertainty: a Bayesian neural network (BNN) and an MLP with Monte Carlo Dropout. Both are then stress-tested on synthetic patients generated with CTGAN and TVAE, under gradual noise, extreme out-of-distribution values and feature permutation.
 
